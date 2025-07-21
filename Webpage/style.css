@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: rgb(73, 118, 255);
+}
+.wrapper{
+    width: 500px;
+    height: min-content;
+    padding: 50px;
+    border-radius: 15px; 
+    background: white;
+}
+.wrapper h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.wrapper form{
+    font-size: 20px;
+}

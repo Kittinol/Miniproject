@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-bar {
+    height: 60px;
+    background-color: darkgreen;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    outline: 1px solid red;
+    height: 80px;
+    align-content: center;
+    padding: 2rem;
+}
+
+.Menu {
+    display: flex;
+}
+
+.Menu li {
+    margin: 0 1rem;
+}
+
+.account-menu {
+    display: flex;
+    margin: 0 1rem;
+
+}
