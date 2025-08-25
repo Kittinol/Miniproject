@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="HomePage.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="contact-info">
+                <p>Telephone : 0654203273</p>
+                <a href="https://line.me/ti/p/@FruitForYou">Line : @FruitForYou</a>
+                <a href="https://www.facebook.com/FruitForYou">Facebook : FruitForYou</a>
+            </div>
+
+            <div class="shopping-cart">
+                <img src="https://static.vecteezy.com/system/resources/previews/027/381/351/non_2x/shopping-cart-icon-shopping-trolley-icon-shopping-cart-logo-container-for-goods-and-products-economics-symbol-design-elements-basket-symbol-silhouette-retail-design-elements-vector.jpg"
+                    alt="shopping cart">
+                <a href="ShopingCart.html">ตะกร้าสินค้า</a>
+            </div>
+
+            <div class="login-register">
+                <a href="login.html">Login?</a>
+                <a href="register.html">Register?</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="previews">
+            <div class="show-one">
+                <img src="https://i.pinimg.com/736x/54/30/b3/5430b3f6290a4bfc483eafc3bba2d4b5.jpg" alt="">
+                <a href="OrderFruit.html">คลิกเพื่อเริ่มการสั่งซื้อ</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="recommend">
+            <!-- ตัวอย่างสินค้า -->
+            <div class="container-box">
+                <div class="fruit-box">
+                    <img src="https://fruitage.in.th/wp-content/uploads/2020/04/avo2-300x300.jpg" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, nulla?</p>
+                    <div class="show-recommend">
+                        <p>เลือกจำนวน</p>
+                        <select>
+                            <option value="10 ลูก 89 บาท">10 ลูก 89 บาท</option>
+                            <option value="50 ลูก 799 บาท">50 ลูก 799 บาท</option>
+                            <option value="100 ลูก 1890 บาท">100 ลูก 1890 บาท</option>
+                        </select>
+                        <input type="button" value="หยิบใส่ตะกร้า" class="add-to-cart" onclick="addToCart(this)">
+                        <script>
+                            function addToCart(button) {
+                                const container = button.closest('.fruit-box');
+                                const select = container.querySelector('select');
+                                const amount = select.value;
+
+                                // เก็บใน localStorage
+                                localStorage.setItem('selectedAmount', amount);
+
+                                // ไปหน้า ShopingCart.html
+                                window.location.href = 'ShopingCart.html';
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="container-box">
+                <div class="fruit-box">
+                    <img src="https://fruitage.in.th/wp-content/uploads/2020/04/avo2-300x300.jpg" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, nulla?</p>
+                    <div class="show-recommend">
+                        <p>เลือกจำนวน</p>
+                        <select>
+                            <option value="10">10</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select>
+                        <input type="button" value="หยิบใส่ตะกร้า" class="add-to-cart">
+                    </div>
+                </div>
+            </div> -->
+
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 FruitForYou. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

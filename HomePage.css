@@ -1,0 +1,145 @@
+/* รีเซ็ตค่าเริ่มต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header และ Navbar */
+header {
+    background-color: #6b8e23; /* olivedrab */
+    padding: 1rem 2rem;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.shopping-cart {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.shopping-cart img {
+    width: 30px;
+    height: 30px;
+}
+
+.login-register a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.login-register a:hover {
+    text-decoration: underline;
+}
+
+/* Main Preview */
+.previews {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.show-one img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.show-one a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #6b8e23;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.show-one a:hover {
+    background-color: #556b2f;
+}
+
+/* Products / Recommend Section */
+.recommend {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.container-box {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.container-box:hover {
+    transform: translateY(-5px);
+}
+
+.fruit-box img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.fruit-box p {
+    margin: 0.5rem 0 1rem 0;
+}
+
+.show-recommend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.show-recommend select {
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #f1f1f1;
+    margin-top: 2rem;
+}
+#cart-container {
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#cart-container h2 {
+    margin-bottom: 1rem;
+}
+
+#cart-list li {
+    margin: 0.5rem 0;
+}

@@ -1,0 +1,59 @@
+/* รีเซ็ตค่าเริ่มต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header และ Navbar */
+header {
+    background-color: #6b8e23;
+    /* olivedrab */
+    padding: 1rem 2rem;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.shopping-cart {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.shopping-cart img {
+    width: 30px;
+    height: 30px;
+}
+
+.login-register a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.login-register a:hover {
+    text-decoration: underline;
+}
+.selected-amount {
+    display: flex;
+    align-content: center;
+    color: black;
+    font-size: 20px;
+}

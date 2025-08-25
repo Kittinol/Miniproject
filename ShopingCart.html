@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ShopingCart.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="contact-info">
+                <p>Telephone : 0654203273</p>
+                <a href="https://line.me/ti/p/@FruitForYou">Line : @FruitForYou</a>
+                <a href="https://www.facebook.com/FruitForYou">Facebook : FruitForYou</a>
+            </div>
+
+            <div class="shopping-cart">
+                <img src="https://static.vecteezy.com/system/resources/previews/027/381/351/non_2x/shopping-cart-icon-shopping-trolley-icon-shopping-cart-logo-container-for-goods-and-products-economics-symbol-design-elements-basket-symbol-silhouette-retail-design-elements-vector.jpg"
+                    alt="shopping cart">
+                <a href="ShopingCart.html">ตะกร้าสินค้า</a>
+            </div>
+
+            <div class="login-register">
+                <a href="Login.html">Login?</a>
+                <a href="Register.html">Register?</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <h1>ตะกร้าสินค้า</h1>
+        <img src="https://fruitage.in.th/wp-content/uploads/2020/04/avo2-300x300.jpg" alt="">
+        <div class="info-product"></div>
+
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                const amount = localStorage.getItem('selectedAmount');
+                if (amount) {
+                    const infoDiv = document.querySelector('.info-product');
+                    // ใส่ class ให้ <p> เพื่อจัด CSS
+                    infoDiv.innerHTML = `<p class="selected-amount">คุณเลือก ${amount} ชิ้น</p>`;
+                }
+            });
+        </script>
+
+
+    </main>
+
+</body>
+
+</html>
